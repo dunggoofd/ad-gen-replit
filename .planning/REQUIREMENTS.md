@@ -13,7 +13,7 @@
 
 ### Data Model
 
-- [ ] **DATA-01**: All tables exist with correct columns, indexes, and constraints (clients, brand_kits, templates, assets, generations, brand_intelligence, campaigns)
+- [x] **DATA-01**: All tables exist with correct columns, indexes, and constraints (clients, brand_kits, templates, assets, generations, brand_intelligence, campaigns)
 - [x] **DATA-02**: `clientScope` middleware resolves active client via header → cookie → fallback; all per-client routes enforce it
 
 ### Client & Brand Kit
@@ -94,7 +94,7 @@
 | SCAF-01 | Phase 1 | Complete |
 | SCAF-02 | Phase 1 | Complete |
 | SCAF-03 | Phase 1 | Complete |
-| DATA-01 | Phase 2 | Pending |
+| DATA-01 | Phase 2 | Complete |
 | DATA-02 | Phase 2 | Complete |
 | CLNT-01 | Phase 3 | Pending |
 | CLNT-02 | Phase 3 | Pending |

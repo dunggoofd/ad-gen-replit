@@ -61,6 +61,8 @@ Progress: [███░░░░░░░] 25%
 - express.urlencoded({ extended: false }) explicit — Express 5 changed the default behavior
 - CommonJS throughout (require()), no type:module — Replit serve-and-go deployment
 - /*splat wildcard required for Express 5 path-to-regexp v8 compatibility (not /*)
+- [02-01]: All 6 new tables reference clients(id) ON DELETE CASCADE — deleting a client cascades all tenant data
+- [02-01]: 6 CREATE INDEX IF NOT EXISTS on all client_id FK columns — O(log n) per-client lookups
 - [Phase 02-data-model-multi-tenancy]: clientScope not mounted globally — keeps /api/health unguarded; 503 semantics for missing client workspace
 - [Phase 02-data-model-multi-tenancy]: NaN guard in getClientById using (!id || isNaN(id)) prevents invalid PostgreSQL parameterized queries
 
