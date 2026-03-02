@@ -57,12 +57,12 @@ Plans:
   3. Logo upload (light/dark/icon) stores file, updates DB, and previews in UI
   4. Autosave fires after typing and shows Saving → Saved status
   5. Live preview card updates as user edits brand fields
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 03-01: routes/clients.js + database/clients.js full CRUD
-- [ ] 03-02: routes/brandKit.js + database/brandKits.js + middleware/upload.js (logo)
-- [ ] 03-03: Brand Setup UI in index.html (two-tab, color pickers, autosave, live preview)
+- [x] 03-01-PLAN.md — database/clients.js full CRUD + routes/clients.js + server.js mount
+- [ ] 03-02-PLAN.md — database/brandKits.js + middleware/upload.js (multer) + routes/brandKit.js + server.js mount
+- [ ] 03-03-PLAN.md — Brand Setup UI in views/index.html (two-tab, color pickers, autosave, live preview, logo upload)
 
 ### Phase 4: Template & Asset Library
 **Goal**: Template library with thumbnail support, favorite toggle, and save-as-winner; brand asset media library with multi-upload and post-upload categorization
@@ -153,7 +153,7 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Core Scaffold | 2/2 | Complete | 2026-03-02 |
 | 2. Data Model & Multi-tenancy | 2/2 | Complete   | 2026-03-02 |
-| 3. Client & Brand Kit | 0/3 | Not started | - |
+| 3. Client & Brand Kit | 1/3 | In progress | - |
 | 4. Template & Asset Library | 0/3 | Not started | - |
 | 5. AI Image Generation | 0/2 | Not started | - |
 | 6. Prompt Intelligence | 0/3 | Not started | - |
