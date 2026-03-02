@@ -21,7 +21,7 @@
 - [ ] **CLNT-01**: Full client CRUD — create, list, get, rename, delete; delete refuses if last workspace
 - [x] **CLNT-02**: Brand Kit CRUD — upsert colors (primary/secondary/accent), fonts, tone of voice, tagline
 - [x] **CLNT-03**: Logo upload — light/dark/icon variants via Multer; `DELETE` clears field and removes file
-- [ ] **CLNT-04**: Brand Setup UI — two-tab card (Brand Kit / Brand Assets), autosave on change, live preview card
+- [x] **CLNT-04**: Brand Setup UI — two-tab card (Brand Kit / Brand Assets), autosave on change, live preview card
 
 ### Templates
 
@@ -99,7 +99,7 @@
 | CLNT-01 | Phase 3 | Pending |
 | CLNT-02 | Phase 3 | Complete |
 | CLNT-03 | Phase 3 | Complete |
-| CLNT-04 | Phase 3 | Pending |
+| CLNT-04 | Phase 3 | Complete |
 | TMPL-01 | Phase 4 | Pending |
 | TMPL-02 | Phase 4 | Pending |
 | ASST-01 | Phase 4 | Pending |
