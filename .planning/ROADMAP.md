@@ -153,7 +153,7 @@ Plans:
 |-------|----------------|--------|-----------|
 | 1. Core Scaffold | 2/2 | Complete | 2026-03-02 |
 | 2. Data Model & Multi-tenancy | 2/2 | Complete   | 2026-03-02 |
-| 3. Client & Brand Kit | 1/3 | In progress | - |
+| 3. Client & Brand Kit | 2/3 | In Progress|  |
 | 4. Template & Asset Library | 0/3 | Not started | - |
 | 5. AI Image Generation | 0/2 | Not started | - |
 | 6. Prompt Intelligence | 0/3 | Not started | - |

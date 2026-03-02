@@ -3,12 +3,12 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: unknown
-last_updated: "2026-03-03T14:13:00Z"
+last_updated: "2026-03-02T14:16:34.948Z"
 progress:
-  total_phases: 8
+  total_phases: 3
   completed_phases: 2
-  total_plans: 19
-  completed_plans: 5
+  total_plans: 7
+  completed_plans: 6
 ---
 
 # Project State
@@ -23,9 +23,9 @@ See: .planning/PROJECT.md (updated 2026-03-02)
 ## Current Position
 
 Phase: 3 of 8 (Client & Brand Kit)
-Plan: 1 of 3 in current phase (03-01 complete)
+Plan: 2 of 3 in current phase (03-01, 03-02 complete)
 Status: In progress
-Last activity: 2026-03-03 — Completed 03-01-PLAN.md (client CRUD API — database/clients.js + routes/clients.js + server.js mount)
+Last activity: 2026-03-02 — Completed 03-02-PLAN.md (brand kit persistence + logo upload/delete endpoints)
 
 Progress: [████░░░░░░] 31%
 
@@ -42,10 +42,10 @@ Progress: [████░░░░░░] 31%
 |-------|-------|-------|----------|
 | 01-core-scaffold | 2 | ~2 min | ~1 min |
 | 02-data-model-multi-tenancy | 2 | ~2 min | ~1 min |
-| 03-client-brand-kit | 1 | ~2 min | ~2 min |
+| 03-client-brand-kit | 2 | ~5 min | ~2.5 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01, 01-02, 02-01, 02-02, 03-01
+- Last 5 plans: 01-01, 01-02, 02-01, 02-02, 03-01, 03-02
 - Trend: -
 
 *Updated after each plan completion*
@@ -69,6 +69,9 @@ Progress: [████░░░░░░] 31%
 - [03-01]: DELETE /api/clients/:id returns 409 (not 500) when last client — err.status=409 thrown in DB layer, propagated via Express error handler
 - [03-01]: POST /api/clients sets active_client_id cookie with httpOnly:false — frontend reads it for workspace switching
 - [03-01]: /api/clients mounted without clientScope — list and create must work before any active client exists
+- [Phase 03-client-brand-kit]: Two-query upsert (SELECT then INSERT/UPDATE) for brand_kits — no UNIQUE constraint on client_id
+- [Phase 03-client-brand-kit]: Logo URLs stored as relative paths (/uploads/logos/filename) not absolute for portability
+- [Phase 03-client-brand-kit]: DB-first delete order: clearLogoField commits to DB before fs.unlink (best-effort file removal)
 
 ### Pending Todos
 
@@ -82,5 +85,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-03
-Stopped at: Completed 03-01-PLAN.md — database/clients.js extended with CRUD, routes/clients.js created, server.js mount added
+Stopped at: Completed 03-02-PLAN.md — database/brandKits.js, middleware/upload.js, routes/brandKit.js created; server.js mounted brandKitRouter under clientScope
 Resume file: None
