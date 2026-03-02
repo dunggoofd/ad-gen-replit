@@ -6,6 +6,7 @@ const cors = require('cors');
 const path = require('path');
 
 const { initDb } = require('./database/init');
+const { clientScope } = require('./middleware/clientScope');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
