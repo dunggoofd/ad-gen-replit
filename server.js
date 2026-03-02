@@ -20,6 +20,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 const clientsRouter = require('./routes/clients');
 app.use('/api/clients', clientsRouter);
 
+const brandKitRouter = require('./routes/brandKit');
+app.use('/api/brand-kit', clientScope, brandKitRouter);
+
 app.get('/api/health', (req, res) => {
   res.json({ status: 'ok', uptime: process.uptime() });
 });
