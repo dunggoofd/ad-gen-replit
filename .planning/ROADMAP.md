@@ -41,11 +41,11 @@ Plans:
   2. `X-Client-Id` header, cookie, and fallback all correctly resolve `req.clientId`
   3. Request without any client data returns 503 with clear message
   4. Re-running `npm start` with existing tables produces no errors
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: Full schema in database/init.js (all tables, indexes, constraints)
-- [ ] 02-02: clientScope middleware + database/clients.js queries (getClientById, getDefaultClient)
+- [ ] 02-01-PLAN.md — Full schema in database/init.js (all tables, indexes, constraints)
+- [ ] 02-02-PLAN.md — database/clients.js queries + middleware/clientScope.js + server.js import
 
 ### Phase 3: Client & Brand Kit
 **Goal**: Full client workspace management with brand kit CRUD, logo uploads, and a polished two-tab Brand Setup UI with autosave
