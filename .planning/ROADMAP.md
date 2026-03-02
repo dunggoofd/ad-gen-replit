@@ -6,7 +6,7 @@ Eight phases take the project from a bare Express skeleton to a fully deployed R
 
 ## Phases
 
-- [ ] **Phase 1: Core Scaffold** - Working Express server, health endpoint, Tailwind UI shell, Replit config
+- [x] **Phase 1: Core Scaffold** - Working Express server, health endpoint, Tailwind UI shell, Replit config
 - [ ] **Phase 2: Data Model & Multi-tenancy** - Full PostgreSQL schema, clientScope middleware, default-client fallback
 - [ ] **Phase 3: Client & Brand Kit** - Client CRUD, brand kit upsert, logo uploads, brand setup UI with autosave
 - [ ] **Phase 4: Template & Asset Library** - Template CRUD, save-as-template, multi-file asset upload, categorization modal
@@ -29,8 +29,8 @@ Eight phases take the project from a bare Express skeleton to a fully deployed R
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Express server, middleware stack, Tailwind HTML shell, static serving, Replit config files
-- [ ] 01-02-PLAN.md — database/init.js with pg Pool, initDb() connectivity probe, clients table DDL skeleton
+- [x] 01-01-PLAN.md — Express server, middleware stack, Tailwind HTML shell, static serving, Replit config files
+- [x] 01-02-PLAN.md — database/init.js with pg Pool, initDb() connectivity probe, clients table DDL skeleton
 
 ### Phase 2: Data Model & Multi-tenancy
 **Goal**: Full database schema live on startup; every table, index, and constraint created idempotently; clientScope middleware attached to all per-client routes
@@ -151,7 +151,7 @@ Plans:
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Core Scaffold | 1/2 | In Progress|  |
+| 1. Core Scaffold | 2/2 | Complete | 2026-03-02 |
 | 2. Data Model & Multi-tenancy | 0/2 | Not started | - |
 | 3. Client & Brand Kit | 0/3 | Not started | - |
 | 4. Template & Asset Library | 0/3 | Not started | - |

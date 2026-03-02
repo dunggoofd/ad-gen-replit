@@ -7,8 +7,8 @@
 
 ### Scaffold
 
-- [ ] **SCAF-01**: Node/Express monolith runs with `npm start`, serves `views/index.html`, loads Tailwind via CDN
-- [ ] **SCAF-02**: Baseline middleware wired (JSON, cookies, static, CORS), `GET /api/health` returns 200 with uptime
+- [x] **SCAF-01**: Node/Express monolith runs with `npm start`, serves `views/index.html`, loads Tailwind via CDN
+- [x] **SCAF-02**: Baseline middleware wired (JSON, cookies, static, CORS), `GET /api/health` returns 200 with uptime
 - [x] **SCAF-03**: PostgreSQL connects on startup, `database/init.js` runs all `CREATE TABLE IF NOT EXISTS` idempotently
 
 ### Data Model
@@ -91,8 +91,8 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| SCAF-01 | Phase 1 | Pending |
-| SCAF-02 | Phase 1 | Pending |
+| SCAF-01 | Phase 1 | Complete |
+| SCAF-02 | Phase 1 | Complete |
 | SCAF-03 | Phase 1 | Complete |
 | DATA-01 | Phase 2 | Pending |
 | DATA-02 | Phase 2 | Pending |

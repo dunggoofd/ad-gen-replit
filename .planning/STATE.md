@@ -43,6 +43,10 @@ Progress: [█░░░░░░░░░] 10%
 - client.release() in finally block to prevent pool exhaustion on query errors
 - SELECT NOW() as cheap connectivity probe in initDb()
 - Phase 2 (plan 02-01) extends initDb() with additional DDL statements; clients table is first
+- Tailwind v3 CDN (cdn.tailwindcss.com) chosen over v4 — more stable per research
+- express.urlencoded({ extended: false }) explicit — Express 5 changed the default behavior
+- CommonJS throughout (require()), no type:module — Replit serve-and-go deployment
+- /*splat wildcard required for Express 5 path-to-regexp v8 compatibility (not /*)
 
 ### Pending Todos
 
@@ -56,5 +60,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-02
-Stopped at: Completed 01-02-PLAN.md — database/init.js created with shared pg.Pool and initDb()
+Stopped at: Completed 01-01-PLAN.md — server.js, package.json, views/index.html, .replit, replit.nix created
 Resume file: None
